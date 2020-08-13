@@ -1,0 +1,78 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="configurator.js" defer></script>
+  </head>
+<body>
+    <title>Centar Novih Tehnologija</title>
+    <center>
+      <nav class="nav">
+        <ul>
+        <li><a href="index.html" >NASLOVNA</a></li>
+        <li><a href="service.html">SERVIS</a> </li>      
+        <li><a href="fiscal.html">FISKALNI PROGRAM</a></li>
+        <li><a href="hosting.html">HOSTING</a></li>
+        <li><a href="contact.html">KONTAKT </a></li>
+        <li><a href="registracija.html">REGISTRACIJA </a></li>
+        <li><a href="calculator.html">KALKULATOR POPRAVKE </a></li>
+        <li><a href="konfiguracija.html">KONFIGURATOR </a></li>
+        </ul>
+      </nav>
+    <div class="headerconfig">  
+     <h1>SASTAVITE SVOJU KONFIGURACIJU</h1>
+      <h3>IZRAČUNAJTE CENU KONFIGURACIJE </h3>
+    </div>
+    </div>
+    </center>
+    <div class="calculate">
+            <h2>Izračunajte cenu konfiguracije:</h2>
+            <form>
+              <div class="select">
+                <label for="cpu">Izaberite procesor:</label> <br>
+                    <select onchange="racunanje()"id="cpu">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="cpucena" class="blackinput"><br>
+                <label for="matična">Izaberite matičnu:</label> <br>
+                     <select onchange="racunanje()" id="matična">
+                     </select>
+                <label >Cena:</label>
+                    <input type="text" id="matičnacena" class="blackinput"><br> <br>
+                <label for="ram">Izaberite RAM:</label> <br>
+                    <select onchange="racunanje()" id="ram">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="ramcena" class="blackinput"><br> <br>
+                    <label for="mem">Izaberite HDD/SSD:</label> <br>
+                    <select onchange="racunanje()" id="mem">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="memcena" class="blackinput"><br> <br>
+                <label for="psu">Izaberite napajanje: </label><br>
+                    <select onchange="racunanje()" id="psu">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="psucena" class="blackinput"><br><br>           
+                <label for="case">Izaberite kućište: </label><br>
+                    <select onchange="racunanje()" id="case" ">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="casecena" class="blackinput"><br> <br>               
+                <label for="gpu">Izaberite grafičku karticu:</label><br>
+                    <select onchange="racunanje()" id="gpu">
+                    </select>
+                <label >Cena:</label>
+                    <input type="text" id="gpucena" class="blackinput">
+                    </div><br>
+                <label for="cena">Ukupna cena konfiguracije:</label><br>
+                    <input type="text" id="cena" class="feedback-input" ><br>
+                    <p>Za tačnu cenu nazovite ili nas posetite!</p>
+                <button type="button" onclick="racunanje()">IZRAČUNAJTE</button>
+              </form>
+              </div>
+        
+    
